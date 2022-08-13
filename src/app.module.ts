@@ -1,9 +1,11 @@
 import { Module } from '@nestjs/common';
 import { ItemsModule } from './items/items.module';
-import { TypeOrmModule } from '@nestjs/typeorm'
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { AuthModule } from './auth/auth.module';
+import { AuthController } from './auth/auth.controller';
 
 @Module({
-  imports: [ItemsModule, TypeOrmModule.forRoot({})],
+  imports: [ItemsModule, TypeOrmModule.forRoot({}), AuthModule],
   controllers: [],
   providers: [],
 })
