@@ -5,4 +5,4 @@ export interface Item {
   price: number;
   description: string;
   status: ItemStatus;
-};
+}
