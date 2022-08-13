@@ -1,7 +1,6 @@
 import { IsString, IsNotEmpty, MaxLength, IsInt, Min } from 'class-validator';
 
 export class CreateItemDto {
-
   @IsString()
   @IsNotEmpty()
   @MaxLength(40)
